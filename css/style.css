@@ -1,0 +1,407 @@
+/* css reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: "Lato", sans-serif;
+}
+
+:root{
+    /* bg color */
+    --bg-color1: #f5f8fa;
+    --bg-color2: #ffffff;
+    --bg-color3: #038e7d;
+    --bg-color4: #1179bf;
+
+    /* font color */
+    --font-color: #548bc5;
+
+    /* typography */
+    --text-color1: #1d2c3c;
+    --text-color2: #646e7a;
+    --text-color3: #ffffff;
+
+}
+
+li{
+     /* list style removal */
+     list-style: none;
+}
+
+section {
+    background: var(--bg-color1);
+    width: 1465px;
+    position: relative;
+    padding: 25px;
+    box-sizing: border-box;
+}
+
+nav {
+    position: relative;
+    left: 30px;
+    width: 1150px;
+    height: 73px;
+    bottom: 16px;
+    display: flex;
+    align-items: center;
+    gap: 55%;
+    padding: 4px;
+  }
+
+nav ul {
+position: absolute;
+display: flex;
+right: 0px;
+align-items: center;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: var(--text-color1);
+    font-weight: 700;
+    font-size: 16px;  
+}
+
+nav ul li {
+    margin-left: 15px;
+}
+
+nav li button {
+    width: 91px;
+    height: 40px;
+    border: 2px solid #a6a8ac;
+    border-radius: 6px;
+    background: none;
+    padding: 6px;
+}
+
+.line {
+    border: none;
+    border-top: 2px solid #e0e6ea;
+    width: 1140px;
+    margin-left: 40px;
+}
+
+.container {
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    width: 865px;
+    height: 780px;
+    top: 30px;
+    left: 180px;
+    border-radius: 10px;
+}
+
+.checkoutcontainer {
+    position: relative;
+    background: var(--bg-color2);
+    padding: 40px;
+    box-shadow: 0 10px 50px 2px rgba(0, 0, 0, 0.2);
+    padding-top: 70px;
+}
+
+.checkoutcontainer h2 {
+    position: absolute;
+    top: 40px;
+    font-size: 30px;
+    font-weight: 400;
+    color: var(--text-color1);
+}
+
+.checkout {
+    text-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.checkout::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 550px;
+    background-color: #f5f7fa;
+    top: 80px;
+    left: -40px;
+}
+
+form {
+    position: relative;
+    top: 80px;
+    color: var(--text-color1);
+}
+
+input::placeholder {
+    color: var(--text-color2);
+}
+
+.flex1 {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    color: var(--text-color1);
+    margin-left: -5px;
+}
+
+
+
+.flex {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.first, .last {
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.first input, .last input {
+    width: 215px;
+    height: 30px;
+    border: none;
+    background: #edeff2;
+    padding: 12px;
+    border-radius: 4px;
+}
+
+.mail {
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.mail input {
+    height: 30px;
+    width: 340px;
+    border: none;
+    background: #edeff2;
+    padding: 12px;
+    border-radius: 4px;
+}
+
+li .cardinfo {
+    margin-top: 90px;
+    margin-bottom: 10px;
+}
+
+.cardinfo::before {
+    content: "";
+    position: absolute;
+    left: -40px;
+    top: 200px;
+    height: 2px;
+    width: 550px;
+    background-color: #f5f7fa;
+}
+
+.cardinfo::after {
+  content: "";
+  position: absolute;
+  left: -40px;
+  top: 385px;
+  height: 2px;
+  width: 550px;
+  background-color: #f5f7fa;
+}
+
+.credit-card {
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.credit-card input {
+    height: 30px;
+    width: 470px;
+    border: none;
+    background: #edeff2;
+    padding: 12px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.checkoutcontainer button {
+    border: none;
+    width: 460px;
+    height: 52px;
+    top: 788px;
+    left: 311px; 
+    background-color: var(--bg-color3);
+    color: hsla(0, 0%, 100%, 1);
+    border-radius: 4px ;
+    margin-left: 1%;
+    margin-top: 100px;
+    margin-bottom: 25px;
+  }
+
+  button:hover {
+    cursor: pointer;
+  }
+
+  .checkoutcontainer p {
+    text-align: left;
+    color: var(--text-color1);
+    width: 300px;
+    position: relative;
+    letter-spacing: -0.4px;
+  }
+
+  .underline::after {
+    position: absolute;
+    content: "";
+    top: 17px;
+    left: 213px;
+    height: 1px;
+    width: 94px;
+    background-color: #646e7a;
+  }
+
+  .help-icon {
+    margin-left: 100px;
+  }
+
+  .stripe {
+    margin-left: 195px;
+    margin-top: 20px;
+  }
+
+/*--------font styling-----*/
+.material-symbols-outlined {
+    font-variation-settings: "FILL" 0, "wght" 250, "GRAD" 0, "opsz" 24;
+    color: var(--font-color);
+    font-size: 35px;
+  }
+  
+  .asidecard .check {
+    font-variation-settings: "FILL" 0, "wght" 350, "GRAD" 0, "opsz" 24;
+    color: var(--font-color);
+    color: var(--font-color2);
+    font-size: 25px;
+  }
+
+  aside {
+    box-sizing: border-box;
+    background: var(--bg-color4);
+    width: 312px;
+    padding: 30px;
+    color: var(--text-color3);
+  } 
+
+  .asidecard {
+    position: absolute;
+    width: 210px;
+    top: 40px;
+  
+  }
+ 
+  .asidecard h6 {
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .asidecard .ninety-9 {
+    font-size: 60px;
+    font-weight: 300;
+    margin-left: 15px;
+  }
+
+  .asidecard b {
+    position: absolute;
+    top: 48px;
+    font-size: 22px;
+    font-weight: 700;
+  }
+
+  .asidecard sub {
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  .auto-renew {
+    margin-top: 12px;
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 24px;
+  }
+
+  .asidecard ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .asidecard ul li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+    font-weight: 300;
+  }
+
+  .agency {
+    margin-top: 35px;
+    font-size: 16px;
+    line-height: 30px;
+  }
+
+  .agency .strong {
+    position: relative;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+
+  .agency .strong::after {
+    content: "";
+    position: absolute;
+
+    width: 180px;
+    height: 4px;
+    top: 21px;
+    opacity: 50%;
+    background: hsla(189, 100%, 86%, 1);
+    left: 1px;
+  }
+
+  .ftp {
+    position: relative;
+    margin-top: 79px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+  }
+
+  .ftp::before {
+    content: "";
+  position: absolute;
+  left: 0;
+  top: -40px;
+  width: 224px;
+  height: 2px;
+  opacity: 20.05%;
+  background-color: #ffff;
+  }
+
+  .ftp .bold {
+    font-weight: 700;
+  }
+
+  .joy {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+  }
+
+  footer {
+    text-align: center;
+    margin-top: 70px;
+    color: #636b6f;
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  footer a {
+    text-decoration: none;
+    color: #31708f;
+  }
+
+  
